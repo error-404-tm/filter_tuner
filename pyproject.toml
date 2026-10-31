@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "filter_tuner"
+version = "0.2.0"
+description = "Interactive pole/zero filter design with fixed-point analysis and CMSIS/Verilog export"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11", "pyqtgraph>=0.13.3", "PyQt6>=6.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "yowasp-yosys"]
+
+[project.gui-scripts]
+filter-tuner = "filter_tuner.app:main"
+
+[tool.setuptools.packages.find]
+include = ["filter_tuner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

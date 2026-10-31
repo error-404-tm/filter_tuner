@@ -1,0 +1,4 @@
+numpy>=1.24
+scipy>=1.11
+pyqtgraph>=0.13.3
+PyQt6>=6.5          # or PySide6 / PyQt5; pyqtgraph picks whichever is installed
