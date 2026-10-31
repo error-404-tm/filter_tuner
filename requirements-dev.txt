@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=7
+yowasp-yosys        # optional: lets the tests simulate the generated Verilog (also needs g++)
